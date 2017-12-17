@@ -7,6 +7,33 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
     <Grid>
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="69*"/>
+            <ColumnDefinition Width="448*"/>
+        </Grid.ColumnDefinitions>
+        <Label x:Name="label" Content="Amount of the loan:" HorizontalAlignment="Left" Margin="10,85,0,0" VerticalAlignment="Top" Height="26" Grid.ColumnSpan="2"/>
+        <Label x:Name="label1" Content="Duration of the loan (years):" HorizontalAlignment="Left" Margin="10,137,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
+        <Label x:Name="label_Copy" Content="Own contribution:" HorizontalAlignment="Left" Margin="184.172,85,0,0" VerticalAlignment="Top" Grid.Column="1"/>
+        <Label x:Name="label_Copy1" Content="Interest rate:" HorizontalAlignment="Left" Margin="10,188,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
+        <Label x:Name="label_Copy2" Content="Housing subsidy:" HorizontalAlignment="Left" Margin="10,111,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
+        <Label x:Name="label_Copy3" Content="Monthly income:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
+        <Label x:Name="label_Copy4" Content="Monthly expenses:&#xD;&#xA;" HorizontalAlignment="Left" Margin="184.172,10,0,0" VerticalAlignment="Top" Height="26" Grid.Column="1"/>
+        <Label x:Name="label_Copy5" Content="Annual percentage rate of charge:" HorizontalAlignment="Left" Margin="184.172,188,0,0" VerticalAlignment="Top" Grid.Column="1"/>
+        <Label x:Name="label2" Content="Additional monthly costs:" HorizontalAlignment="Left" Margin="10,214,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
+        <Label x:Name="label3" Content="Additional one-time costs:" HorizontalAlignment="Left" Margin="184.172,214,0,0" VerticalAlignment="Top" Grid.Column="1"/>
+        <TextBox x:Name="textBoxMonthlyIncome" HorizontalAlignment="Left" Height="23" Margin="40.172,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="139" Grid.Column="1" TextChanged="textBoxMonthlyIncome_TextChanged" PreviewTextInput="textBoxMonthlyIncome_PreviewTextInput"/>
+        <TextBox x:Name="textBoxMonthlyExpenses" HorizontalAlignment="Left" Height="23" Margin="292.172,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="146" Grid.Column="1" TextChanged="textBoxMonthlyExpenses_TextChanged" PreviewTextInput="textBoxMonthlyExpenses_PreviewTextInput"/>
+        <TextBox x:Name="textBox2" HorizontalAlignment="Left" Height="23" Margin="62.172,89,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="117" Grid.Column="1"/>
+        <TextBox x:Name="textBox3" HorizontalAlignment="Left" Height="23" Margin="292.172,88,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="146" Grid.Column="1"/>
+        <TextBox x:Name="textBox4" HorizontalAlignment="Left" Height="23" Margin="46.172,114,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="133" Grid.Column="1"/>
+        <TextBox x:Name="textBox5" HorizontalAlignment="Left" Height="23" Margin="98.172,140,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="81" Grid.Column="1"/>
+        <TextBox x:Name="textBox6" HorizontalAlignment="Left" Height="23" Margin="17.172,192,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="162" Grid.Column="1"/>
+        <TextBox x:Name="textBox7" HorizontalAlignment="Left" Height="23" Margin="85.172,217,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="94" Grid.Column="1"/>
+        <TextBox x:Name="textBox8" HorizontalAlignment="Left" Height="23" Margin="374.172,191,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="64" Grid.Column="1"/>
+        <TextBox x:Name="textBox9" HorizontalAlignment="Left" Height="23" Margin="338.172,217,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="100" Grid.Column="1"/>
+        <Label x:Name="label4" Content="Monthly savings:" Grid.Column="1" HorizontalAlignment="Left" Margin="80,36,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="labelMonthlySavings" Content="0" Grid.Column="1" HorizontalAlignment="Left" Margin="184,36,0,0" VerticalAlignment="Top" Width="97"/>
+        <Button x:Name="buttonNext" Content="NEXT" Grid.Column="1" HorizontalAlignment="Left" Margin="323,272,0,0" VerticalAlignment="Top" Width="75" Click="buttonNext_Click"/>
+
     </Grid>
 </Window>
